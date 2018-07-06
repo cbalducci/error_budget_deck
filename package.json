@@ -41,6 +41,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "reveal-random-colors": "^1.0.1"
+    "canvas": "^1.6.11",
+    "reveal-random-colors": "^1.0.1",
+    "reveal.js-trianglify": "^0.1.0",
+    "trianglify": "^1.2.0"
   }
 }

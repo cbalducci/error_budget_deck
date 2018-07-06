@@ -7,8 +7,8 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
 
+		<link rel="stylesheet" href="css/theme/black.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -24,10 +24,24 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section><!-- .slide: data-state="random-color" -->
-
-# My Slide Title</section>
-				<section>Slide 2</section>
+				<section data-background="#19A974">
+					<h1 style="font-family:courier new; font-size:300%;">ERROR BUDGETING</h1>
+				</section>
+				<section data-background="#96CCFF">
+					<h1 style="font-family:verdana; font-size:400%;">AGILITY</h1>
+				</section>
+				<section data-background="#FFA3D7">
+					<h1 style="font-family:georgia; font-size:350%;">STABILITY</h1>
+				</section>
+				<section data-background="#FFD700">
+					<h1 style="font-family:impact; font-size:500%;">BALANCE</h1>
+				</section>
+				<section data-background="#AAAAAA">
+					<h1 style="font-family:garamond; font-size:350%;">DOWNTIME</h1>
+				</section>
+				<section data-background="#FBF1A9">
+					<h1 style="font-family:Comic Sans MS; font-size:320%;">QUESTIONS?</h1>
+				</section>
 			</div>
 		</div>
 
@@ -35,6 +49,7 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
+
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -43,10 +58,13 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/random-colors/index.js' },
+					{ src: 'plugin/random-coolors/colors.js' },
+					{ src: 'plugin/random-coolors/fonts.js' },
+					{ src: 'plugin/random-coolors/index.js' },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			Reveal.addEventListener('slidechanged', RandomColors());
 		</script>
 	</body>
 </html>
